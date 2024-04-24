@@ -1,3 +1,152 @@
-h1{
-    color: green;
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilo para el encabezado (header) */
+header {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para la navegación (nav) */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Cambia el color al hacer hover */
+}
+
+/* Estilo para secciones */
+ section {
+    margin: 20px 0;
+    padding: 20px;
+    /* background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     */
+ }
+
+/* Estilo para títulos de sección */
+section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo para párrafos dentro de secciones */
+section p {
+    
+    line-height: 1.5;
+}
+
+section p a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+section p a:hover {
+    color: #0056b3;
+}
+
+
+/* Estilo para imágenes */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------------------------------------------- */
+ 
+/* Estilo para la sección de proyectos */
+#projects {
+    margin-top: 30px;
+}
+
+#projects a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#projects a:hover {
+    color: #0056b3;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 10px;
+    }
+
+.project h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ----------------------------------------------------------------------------------------- */
+
+/* Estilo para la sección de contacto */
+#contact {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-link:hover {
+    background-color: #0056b3;
 }
