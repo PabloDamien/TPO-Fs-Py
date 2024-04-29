@@ -150,3 +150,111 @@ img {
 .contact-link:hover {
     background-color: #0056b3;
 }
+
+
+/* ------------------------------------     MEDIA QUERIES (PUNTOS DE QUIEBRE) -------------------------------------*/
+
+/* Estilos para PC escritorio */
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.6vw; /* Tamaño de letra relativo para PC escritorio */
+    }
+
+    section h2 {
+        font-size: 2.4vw; /* Tamaño de título de sección relativo para PC escritorio */
+    }
+
+    section p {
+        font-size: 1.6vw; /* Tamaño de texto relativo para PC escritorio */
+    }
+
+    .project h3 {
+        font-size: 2vw; /* Tamaño de título de proyecto relativo para PC escritorio */
+    }
+
+    .project p {
+        font-size: 1.6vw; /* Tamaño de texto de proyecto relativo para PC escritorio */
+    }
+
+    #contact h2 {
+        font-size: 2.4vw; /* Tamaño de título de contacto relativo para PC escritorio */
+    }
+
+    #contact p {
+        font-size: 2vw; /* Tamaño de texto de contacto relativo para PC escritorio */
+    }
+
+    .contact-link {
+        padding: 1.6vw 3.2vw; /* Espaciado de enlace de contacto relativo para PC escritorio */
+    }
+}
+
+/* Estilos para tablet */
+@media screen and (max-width: 1023px) {
+    body {
+        font-size: 1.4vw; /* Tamaño de letra relativo para tablet */
+    }
+
+    section h2 {
+        font-size: 2vw; /* Tamaño de título de sección relativo para tablet */
+    }
+
+    section p {
+        font-size: 1.3vw; /* Tamaño de texto relativo para tablet */
+    }
+
+    .project h3 {
+        font-size: 1.75vw; /* Tamaño de título de proyecto relativo para tablet */
+    }
+
+    .project p {
+        font-size: 1.3vw; /* Tamaño de texto de proyecto relativo para tablet */
+    }
+
+    #contact h2 {
+        font-size: 2vw; /* Tamaño de título de contacto relativo para tablet */
+    }
+
+    #contact p {
+        font-size: 1.4vw; /* Tamaño de texto de contacto relativo para tablet */
+    }
+
+    .contact-link {
+        padding: 1vw 2vw; /* Espaciado de enlace de contacto relativo para tablet */
+    }
+}
+
+/* Estilos para celular */
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 1.2vw; /* Tamaño de letra relativo para celular */
+    }
+
+    section h2 {
+        font-size: 1.8vw; /* Tamaño de título de sección relativo para celular */
+    }
+
+    section p {
+        font-size: 1.2vw; /* Tamaño de texto relativo para celular */
+    }
+
+    .project h3 {
+        font-size: 1.5vw; /* Tamaño de título de proyecto relativo para celular */
+    }
+
+    .project p {
+        font-size: 1.2vw; /* Tamaño de texto de proyecto relativo para celular */
+    }
+
+    #contact h2 {
+        font-size: 1.8vw; /* Tamaño de título de contacto relativo para celular */
+    }
+
+    #contact p {
+        font-size: 1.3vw; /* Tamaño de texto de contacto relativo para celular */
+    }
+
+    .contact-link {
+        padding: 0.8vw 1.6vw; /* Espaciado de enlace de contacto relativo para celular */
+    }
+}
