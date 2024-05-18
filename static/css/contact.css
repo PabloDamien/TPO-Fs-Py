@@ -55,7 +55,28 @@ section {
      */
  }
 
-form{
-    align-items: center;
+ #redes div{
+    margin: 20px;
+    color: darkslategrey;
+    
+ }
+
+#form-register div{
+
+    margin: 10px;
+    color: darkslategrey;
+    font-size: medium;
+    
+}
+#message{
+    height: 120px;
+    width: 200px;
+}
+#submit{
+    margin-left: 100px;
+    height: 30px;
+    width: 70px;
+    background-color: aquamarine;
+    
 }
 
