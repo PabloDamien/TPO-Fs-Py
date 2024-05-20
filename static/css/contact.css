@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-image: url(../img/pexels-juanpphotoandvideo-1242347.jpg);
+    background-size:auto;
+    background-attachment: scroll;
+        
 }
 
 /* Estilo básico para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    color: #333;
+    color: whitesmoke;
+    
 }
 
 header {
-    background-color: #fff;
+    background-color:white;
     padding: 15px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px;
 }
 
 /* Estilo para la navegación (nav) */
@@ -30,22 +35,54 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: chocolate;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #007bff; /* Cambia el color al hacer hover */
+    color: springgreen; 
 }
 
 img {
     max-width: 100%;
-    height: auto;
+    height: 280px;
     border-radius: 5px;
     margin-bottom: 10px;
+    margin-left: 510px;
+    border-style: groove;
+    border-color: white;
+}
+h1{
+    color: seagreen;
+    margin-left: 230px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-shadow: #333;
 }
 
+h2{
+    color: seagreen;
+    margin-top: 40px;
+    margin-left: 30px;
+    text-decoration: underline;
+}
+
+i{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    color: chocolate;
+    text-decoration: none;
+    
+}
+a:hover{
+    color:springgreen ;
+    text-decoration: underline;
+}
 section {
     margin: 20px 0;
     padding: 20px;
@@ -56,17 +93,22 @@ section {
  }
 
  #redes div{
-    margin: 20px;
-    color: darkslategrey;
+    font-size: larger;
+    margin: 30px 20px;
     
- }
+}
 
 #form-register div{
 
-    margin: 10px;
-    color: darkslategrey;
+    margin: 20px;
+    color: chocolate;
     font-size: medium;
     
+}
+
+input{
+    color: antiquewhite;
+    border-style: solid;
 }
 #message{
     height: 120px;
@@ -76,7 +118,15 @@ section {
     margin-left: 100px;
     height: 30px;
     width: 70px;
-    background-color: aquamarine;
+    color: chocolate;
+    border-color: seagreen;
+    
+    
+}
+#submit:hover{
+    font-style: normal;
+    color:springgreen;
+    text-decoration: underline;
     
 }
 
