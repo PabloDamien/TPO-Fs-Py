@@ -106,24 +106,29 @@ section {
     
 }
 
+
+
 input{
     color: antiquewhite;
-    border-style: solid;
-}
+    border-style: double;
+    
+    }
 #message{
     height: 120px;
     width: 200px;
 }
-#submit{
-    margin-left: 100px;
-    height: 30px;
-    width: 70px;
+button{
+    font-weight: bold ;
+    border-style: solid;
+    margin-left: 140px;
+    height: 40px;
+    width: 80px;
     color: chocolate;
     border-color: seagreen;
     
     
 }
-#submit:hover{
+button:hover{
     font-style: normal;
     color:springgreen;
     text-decoration: underline;
