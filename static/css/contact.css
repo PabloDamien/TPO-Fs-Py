@@ -100,6 +100,7 @@ section {
 
 #form-register div{
 
+    display: flexbox ;
     margin: 20px;
     color: chocolate;
     font-size: medium;
@@ -108,11 +109,18 @@ section {
 
 
 
-input{
-    color: antiquewhite;
+.form-control input {
+    background-color: white;
+    color: white;
     border-style: double;
     
     }
+
+.form-select option{
+    background-color: white;
+    
+
+}    
 #message{
     height: 120px;
     width: 200px;

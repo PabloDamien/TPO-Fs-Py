@@ -31,4 +31,4 @@ const validarFormulario = (event) => {
     }//si es true se envia el formulario
 }
 
-formRegister.addEventListener("submit", validarFormulario);
+formRegister.addEventListener("submit", validarFormulario());
