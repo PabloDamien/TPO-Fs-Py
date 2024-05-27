@@ -3,34 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyects</title>
-    <link rel="stylesheet" href="./static/css/proyects.css">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+    <meta name="description" content="Portafolio de desarrollador de software con proyectos destacados en diversas tecnologías.">
+    <meta name="keywords" content="desarrollo de software, portafolio, proyectos, React, Node.js, Django, JavaScript">
+    <meta name="author" content="Elena Vargas">
 </head>
+
 <body>
-    <section id="projects" class="projects-section">
-        <h2>Proyectos Destacados</h2>
-        
-        <div class="project">
-            <h3>Sitio Web de Tienda Online "EcoMarket"</h3>
-            <p><strong>Descripción:</strong> Desarrollé y diseñé un sitio web de comercio electrónico para una tienda de productos ecológicos. La plataforma incluye un diseño moderno y responsivo, integración de pasarelas de pago y gestión de inventario.</p>
-            <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, React.js, Firebase</p>
-            <img src="https://via.placeholder.com/400x300?text=EcoMarket" alt="Captura de pantalla de EcoMarket">
-        </div>
-        
-        <div class="project">
-            <h3>Aplicación Web de Gestión de Tareas "Taskify"</h3>
-            <p><strong>Descripción:</strong> Diseñé y desarrollé una aplicación web para la gestión de tareas con una interfaz intuitiva y funcionalidades avanzadas como la asignación de tareas, recordatorios y seguimiento del progreso.</p>
-            <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</p>
-            <img src="https://via.placeholder.com/400x300?text=Taskify" alt="Captura de pantalla de Taskify">
-        </div>
-        
-        <div class="project">
-            <h3>Blog Personal "TechInsights"</h3>
-            <p><strong>Descripción:</strong> Creé un blog personal donde comparto mis conocimientos y experiencias en el mundo del desarrollo de software y el diseño web. El diseño del blog es limpio y minimalista, centrado en la legibilidad y la navegación fácil.</p>
-            <p><strong>Tecnologías Utilizadas:</strong> HTML, CSS, JavaScript, React.js, Gatsby</p>
-            <img src="https://via.placeholder.com/400x300?text=TechInsights" alt="Captura de pantalla de TechInsights">
-        </div>
-    </section>
+    <header>
+        <nav>
+            <ul class="nav-links"> 
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Proyects.html">Projects</a></li>
+                <li><a href="./Contact.html">Contact</a></li>               
+            </ul> 
+        </nav>
+    </header>
     
+    <main>
+        <section id="projects" class="projects-section">
+            <h2 class="title-proyects">Proyectos Destacados</h2>
+
+            <div class="project">
+                <h3>Aplicación de Gestión de Tareas</h3>
+                <p>Una aplicación móvil intuitiva para organizar tareas con recordatorios y sincronización en la nube.</p>
+                <h4>Tecnologías Utilizadas</h4>
+                <ul>
+                    <li>Frontend: React Native</li>
+                    <li>Backend: Node.js con Express</li>
+                    <li>Base de datos: MongoDB</li>
+                    <li>Notificaciones: Firebase Cloud Messaging (FCM)</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Sitio Web Interactivo para ONG</h3>
+                <p>Un sitio web interactivo para una organización no gubernamental (ONG) que muestra información sobre sus proyectos, eventos y actividades.</p>
+                <h4>Tecnologías Utilizadas</h4>
+                <ul>
+                    <li>Frontend: HTML, CSS, JavaScript</li>
+                    <li>Mapas: API de Google Maps</li>
+                    <li>Formularios de donación: Integración de pasarelas de pago como PayPal o Stripe</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Sitio Web de Tienda Online "EcoMarket"</h3>
+                <p>Una tienda en línea especializada en productos ecológicos y sostenibles.</p>
+                <h4>Tecnologías Utilizadas</h4>
+                <ul>
+                    <li>Frontend: HTML, CSS (con Bootstrap o Tailwind CSS), JavaScript</li>
+                    <li>Backend: Django (Python) o Express.js (Node.js)</li>
+                    <li>Base de datos: PostgreSQL o MySQL</li>
+                    <li>Pasarelas de pago: Integración de Stripe, PayPal u otra pasarela de pago</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Portafolio de Desarrollador de Software. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>

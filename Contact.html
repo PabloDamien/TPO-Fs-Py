@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Portafolio virtual Elena Vargas</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" href="static/img/favicon-cohete.ico">
+    <meta name="description" content="Ponte en contacto con Elena Vargas, desarrolladora de software y diseñadora web.">
+    <meta name="keywords" content="contacto, desarrollo de software, diseño web, Elena Vargas">
+    <meta name="author" content="Elena Vargas">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="./Home.html">Home</a></li>
+                <li><a href="./About.html">About</a></li>
+                <li><a href="./Proyects.html">Projects</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact">
+            <h1>Contáctame</h1>
+            <p>¿Tienes alguna pregunta o proyecto en mente? ¡No dudes en contactarme usando el siguiente formulario o enviándome un correo electrónico a <a href="mailto:elena.vargas@example.com">elena.vargas@example.com</a>!</p>
+
+            <form id="contact-form" action="https://formspree.io/f/{your-id}" method="POST">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <p>&copy; 2024 Portafolio de Desarrollador de Software. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./static/js/Contact.js"></script>
+</body>
+
+</html>

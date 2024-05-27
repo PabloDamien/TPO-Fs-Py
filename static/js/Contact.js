@@ -1,34 +1,39 @@
-const formRegister = document.querySelector("#form-register");
+// Seleccionar el formulario
+const form = document.getElementById('contact-form');
 
-const validarFormulario = (event) => {
-    event.preventDefault();//me permite hacer una validacion personalizada
-
-    const firstname = document.querySelector("#firstname");
-    const lastname = document.querySelector("#lastname");
-    const email = document.querySelector("#email");
-    let validation = true;
-
-    if(firstname.value.trim() ===""){ //elimino los espacios en blanco con trim
-        // alert("El campo nombre no debe estar vacio") (una forma de dar aviso)
-        document.querySelector("#error-firstname").textContent = "Debe completar el nombre"; //otra forma de dar el alerta
-        validation = false;
+// Agregar un evento de escucha para la presentación del formulario
+form.addEventListener('submit', function(event) {
+    // Evitar que el formulario se envíe automáticamente
+    event.preventDefault();
+    
+    // Validar los campos del formulario
+    if (validateForm()) {
+        // Si el formulario es válido, enviar los datos
+        this.submit();
     }
-    if(lastname.value.trim() ===""){ 
-        // alert("El campo nombre no debe estar vacio")
-        document.querySelector("#error-lastname").textContent = "Debe completar el apellido"; 
-        validation = false;
-    }
-    if(email.value.trim() ===""){ 
-        // alert("El campo nombre no debe estar vacio")
-        document.querySelector("#error-email").textContent = "Debe completar el campo de email"; 
-        validation = false;
-    }
+});
 
-    if(validation){
-        formRegister.submit()
-    } else{
+// Función para validar el formulario
+function validateForm() {
+    // Obtener los valores de los campos del formulario
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const message = document.getElementById('message').value.trim();
+    
+    // Validar que los campos no estén vacíos
+    if (name === '' || email === '' || message === '') {
+        alert('Por favor, complete todos los campos del formulario.');
         return false;
-    }//si es true se envia el formulario
+    }
+    
+    // Validar el formato del correo electrónico
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Por favor, ingrese un correo electrónico válido.');
+        return false;
+    }
+    
+    // Si todas las validaciones pasan, el formulario es válido
+    return true;
 }
-
-formRegister.addEventListener("submit", validarFormulario());
+form.addEventListener("submit", validarFormulario());
